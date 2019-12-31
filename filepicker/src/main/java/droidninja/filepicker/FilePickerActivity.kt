@@ -107,7 +107,7 @@ class FilePickerActivity : BaseFilePickerActivity(), PhotoPickerFragmentListener
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
+//        super.onBackPressed()
         PickerManager.reset()
         setResult(Activity.RESULT_CANCELED)
         finish()
