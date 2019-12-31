@@ -17,7 +17,7 @@ object FragmentUtil {
     fun replaceFragment(activity: AppCompatActivity, contentId: Int, fragment: BaseFragment) {
         val transaction = activity.supportFragmentManager.beginTransaction()
 
-        transaction.setCustomAnimations(R.anim.slide_left_in, R.anim.slide_left_out)
+        transaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
 
         transaction.replace(contentId, fragment, fragment.javaClass.simpleName)
 
